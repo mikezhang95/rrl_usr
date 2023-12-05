@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: realworldrl-suite
+Version: 1.0
+Summary: RL evaluation framework for the real world.
+Home-page: https://github.com/google-research/realworldrl_suite
+Author: Google
+Author-email: no-reply@google.com
+License: Apache 2.0
+Platform: any
+License-File: LICENSE
+License-File: AUTHORS
+
+UNKNOWN
+

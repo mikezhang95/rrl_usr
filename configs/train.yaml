@@ -1,0 +1,22 @@
+defaults:
+    - agent: sac
+    - overrides: cartpole_swingup
+
+seed: 1
+device: "cuda:0"
+
+# logger
+log_frequency: 10000
+log_save_tb: true
+
+# video recorder
+save_video: false 
+
+# this needs to be specified manually
+experiment: default
+
+# hydra
+root_dir: "./outputs"
+hydra:
+    run:
+        dir: ${root_dir}/${env.name}-${experiment}/${seed}

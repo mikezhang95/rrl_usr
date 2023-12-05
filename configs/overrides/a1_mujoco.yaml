@@ -1,0 +1,23 @@
+# @package _group_
+env: 
+  name: "a1"
+  class: "envs.a1_env_mujoco.A1EnvMujoco"
+  params: 
+    random: ${seed}
+    real_robot: False
+    task_name: locomotion
+max_episode_steps: 400
+
+# training params 
+num_random_steps: 5e3
+num_train_steps: 1e6
+eval_frequency: 1e4
+num_eval_episodes: 1
+
+# algorithm params
+sac_critic_lr: 1e-4
+sac_actor_lr: 1e-4
+sac_alpha_lr: 1e-4
+
+# replay buffer
+replay_buffer_capacity: ${num_train_steps}

@@ -1,0 +1,28 @@
+# @package _group_
+env: 
+  name: "humanoid_stand"
+  class: "envs.rwrl_env.RWRLEnv"
+  params: 
+    domain_name: "humanoid"
+    task_name: "realworld_stand"
+    task_kwargs:
+      random: ${seed}
+      perturb_spec:
+          enable: False
+          period: 1
+          scheduler: "uniform"
+max_episode_steps: 1000
+
+# training params 
+num_random_steps: 5e3
+num_train_steps: 2e6
+eval_frequency: 1e4
+num_eval_episodes: 10
+
+# algorithm params
+sac_critic_lr: 1e-4
+sac_actor_lr: 1e-4
+sac_alpha_lr: 1e-4
+
+# replay buffer
+replay_buffer_capacity: ${num_train_steps}

@@ -1,0 +1,8 @@
+six
+absl-py
+numpy
+dm-env
+dm-control
+lxml
+scipy
+matplotlib
